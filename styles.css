@@ -1,0 +1,499 @@
+/* Reset default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in width and height */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f3f8f6;
+  color: #000000;
+}
+
+/* hero */
+
+.hero {
+  position: relative;
+  background-image: url("./sources/hero.jpg"); 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 200px 0;
+  color: #ffffff;
+}
+
+/* Overlay Styles */
+.hero::before {
+  content: "";
+  position: absolute; /* Changed from sticky to absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: 1; /* Ensure it is lower than the content */
+  pointer-events: none; /* Allow interactions with elements behind the overlay */
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative; /* Ensure it is above the overlay */
+  z-index: 2;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  position: relative; /* Ensure it is above the overlay */
+  z-index: 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0f530f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative; /* Ensure it is above the overlay */
+  z-index: 2;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e67e22;
+}
+/* Tournaments Section Styles */
+.tournaments {
+  display: flex;
+  justify-content: center; /* Center-align items horizontally */
+  text-align: center; /* Center-align text */
+}
+
+.tournaments h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.service-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-item {
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 10px; /* Reduced margin between service items */
+}
+
+.service-item img {
+  width: 60%;
+  height: auto;
+  max-height: 230px;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .tournaments {
+    padding: 20px; /* Add padding to the section */
+  }
+
+  .service-slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 90%;
+  }
+}
+
+/* Countdown Section */
+.countdown {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Timer */
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.timer div {
+  margin: 0 10px;
+}
+
+.time-label {
+  font-size: 14px;
+  color: #888;
+}
+
+.timer span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 60px;
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Portfolio Section Styles */
+.Portfolio {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text if needed */
+
+}
+
+.slide-container {
+  position: relative;
+  overflow: hidden;
+  margin: auto auto;
+  max-width: 1200px; /* Ensure it matches your container width */
+  padding: 10px 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure buttons don't interfere with image clicks */
+}
+
+.navigation button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  pointer-events: all; /* Enable button clicks */
+  margin: 0 10px; /* Add some margin to move them outside the image area */
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+
+
+/* Rankings Table Styles */
+#Rankings  {
+  margin-top: 20px;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100%; /* Full viewport height */
+  text-align: center; /* Center text if needed */
+  
+}
+#maleRankingsTable , #femaleRankingsTable {
+  display: flex;
+  flex-direction: column; /* Ensures containers are stacked vertically */
+  gap: 20px; /* Adds space between each container */
+}
+table {
+  width: 40%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: white; /* Ensures a white background */
+}
+
+th {
+  background-color: #f2f2f2; /* Light gray background for headers */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Slightly darker gray on hover */
+}
+
+/* Sponsors Section Styles */
+.sponsors {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.sponsors h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsor-logo {
+  width: 20%; /* Each logo takes up 20% of the container */
+  height:25%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logo img {
+  max-width: 50%;
+  height: auto;
+  
+}
+.sponsors {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add space between logos */
+  }
+  
+  .sponsor-logo {
+    width: 150px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    object-fit: contain; /* Ensure logos maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 10px; /* Add some padding */
+    background-color: white; /* Optional: background color to ensure consistent look */
+    border-radius: 5px; /* Optional: add rounded corners */
+  }
+  
+  .sponsor-logo:hover {
+    transform: scale(1.05); /* Slightly enlarge the logo on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+/* Media query for smaller devices */
+@media (max-width: 767px) {
+  .sponsor-logo {
+    width: 50%; /* Each logo takes up 50% of the container on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsor-logo {
+    width: 100%; /* Each logo takes up 100% of the container on very small screens */
+  }
+}
+
+
+
+
+/* Newsletter Section Styles */
+.newsletter {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    max-width: 100%;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0f530f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Adjusting to smaller screens */
+  @media (max-width: 767px) {
+    .newsletter form {
+      flex-direction: column;
+    }
+  
+    .newsletter input[type="email"] {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  
+    .newsletter button {
+      width: 100%;
+    }
+  }
+  
+
+ 
+
+  #email::placeholder {
+    color:#0f530f
+  }
+
+  /* contact us */
+  #contact-us {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  #contact-us h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .contact-item {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .contact-item i {
+    margin-right: 10px;
+    color: #0f530f;
+  }
+  
+  .contact-item a {
+    color: #0f530f;
+    text-decoration: none;
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-item address {
+    display: inline;
+    font-style: normal;
+  }
+  
+
+  /* teskra */
+
+  #teskra:hover {
+    background-color: rgb(172, 172, 255);
+    border: solid 1px ;
+    border-color: palevioletred;
+  }

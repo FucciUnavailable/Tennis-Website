@@ -1,0 +1,35 @@
+.playerContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 150px 0px; 
+}
+
+.player {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.player img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+.player img:hover {
+    border:solid;
+    border-color: green;
+}
+
+.player-info {
+    overflow: hidden; /* Clear floats */
+}
+
+.player-info h2 {
+    margin-top: 0;
+}
+
+.social-links a {
+    margin-right: 10px;
+}

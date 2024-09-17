@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tennis Tournament</title>
+  <link rel="icon" type="image/png" href="./sources/logo.png"> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="stylesButtons.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="live.css">
+  <script src="live.js"></script>
+  <script src="script.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="headerContainer">
+           
+        <div class="dropdown">
+            <img src="./sources/logo.png" alt="Website Logo">
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="index.html#tournaments">Tournaments</a></li>
+                    <li><a href="index.html#Tennis Peeks">Tennis Peeks</a></li>
+                    <li><a href="index.html#Rankings">Rankings</a></li>
+                    <li><a href="#Sponsors">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>Tennis Tournament</h1>
+        <a href="https://teskerti.tn/"><img src="./sources/teskerti.png" id="teskra" alt="Teskerti"></a> 
+        <input type="text" id="searchInput" placeholder="Search Look up players, games, stats...etc">
+        <div id="google_translate_element"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="./live.html">Watch Tennis</a><span class="live-indicator"></span></li>
+            </ul>
+        </nav>
+ 
+    </div>
+    
+   
+  </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome To Your Favorite Tennis Website</h2>
+      <p>You Can Watch Live Tournaments On Our Website.</p>
+      <a href="#live-tennis" class="btn">Watch Live Tournaments</a>
+    </div>
+  </section>
+ <!-- Live Section-->
+ <section id="live-tennis">
+  <h2>Watch Live Tennis</h2>
+  <button id="toggle-comments">Show Comments</button>
+  <div id="live">
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Na0w3Mz46GA?si=nHV6EM3EBqJuyUVJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div id="comments" class="comments-container">
+      <p>Comments are not available here. <a href="https://www.youtube.com/live_chat?v=Na0w3Mz46GA" target="_blank">View on YouTube</a></p>
+    </div>
+  </div>
+</section>
+<!-- / Sponsors Section -->
+
+  <section id="Sponsors" class="Sponsors">
+    <div class="sponsors">
+
+  <div class="container">
+    <h2>Our Sponsors</h2>
+    <div class="sponsor-logos">
+      <!--logos -->
+      <div class="sponsor-logo"><img src="https://1000logos.net/wp-content/uploads/2021/04/Puma-logo.png" alt="Sponsor 1"></div>
+      <div class="sponsor-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pepsi_2023.svg/1200px-Pepsi_2023.svg.png" alt="Sponsor 2"></div>
+      <div class="sponsor-logo"><img src="https://1000logos.net/wp-content/uploads/2020/09/Wilson-Logo.png" alt="Sponsor 3"></div>
+      <div class="sponsor-logo"><img src="https://www.hatchwise.com/wp-content/uploads/2022/01/Monster-Energy-Symbol-1024x576.png" alt="Sponsor 4"></div>
+      <div class="sponsor-logo"><img src="https://static.toiimg.com/thumb/msid-106616095,width-400,resizemode-4/106616095.jpg" alt="Sponsor 5"></div>
+      <div class="sponsor-logo"><img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="Sponsor 6"></div>
+      <div class="sponsor-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Sponsor 7"></div>
+      <div class="sponsor-logo"><img src="https://cdn.mos.cms.futurecdn.net/786NzPhpXo6G8hkutJkHTM-1200-80.jpg" alt="Sponsor 8"></div>
+      <div class="sponsor-logo"><img src="https://i.pinimg.com/originals/0b/fb/68/0bfb682d3a786c68ffd1c64213f99fe5.png" alt="Sponsor 9"></div>
+      <div class="sponsor-logo"><img src="https://i.pinimg.com/originals/1e/c1/d2/1ec1d2ce366d1f603b1bde70ae508063.png" alt="Sponsor 10"></div>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <section id="contact-us">
+    <h2>Contact Us</h2>
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+1234567890">+1 234 567 890</a>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <a href="baddour:info@example.com">info@example.com</a>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <address>123 Souter Vyle, City, Country</address>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; Tennis Tournament Website Made By Badreddine</p>
+    </div>
+  </footer>
+  </body>

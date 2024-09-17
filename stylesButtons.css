@@ -1,0 +1,57 @@
+/* Button Style */
+#Rankings button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Male Rankings Button */
+  #maleButton {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  #maleButton:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Female Rankings Button */
+  #femaleButton {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  #femaleButton:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Hide Rankings Button */
+  #hideButton {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  #hideButton:hover {
+    background-color: #c0392b;
+  }
+
+
+
+  #translate {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #translate:hover {
+    background-color: #0056b3;
+  }
